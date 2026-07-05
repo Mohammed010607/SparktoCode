@@ -19,4 +19,5 @@
   <Project Path="../C# Fundamentals Tasks/Part 2/Task 4/PasswordRetry/PasswordRetry.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 2/Task 5/Number_Guessing_Game/Number_Guessing_Game.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 2/Task1/Countdown_Timer/Countdown_Timer.csproj" />
+  <Project Path="../C# Fundamentals Tasks/Part 3/Task10_Word_Position_Finder/Task10_Word_Position_Finder.csproj" Id="45e11397-25c0-40ee-a302-a2d1e2f8fb59" />
 </Solution>

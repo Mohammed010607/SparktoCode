@@ -19,4 +19,5 @@
   <Project Path="../C# Fundamentals Tasks/Part 2/Task 4/PasswordRetry/PasswordRetry.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 2/Task 5/Number_Guessing_Game/Number_Guessing_Game.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 2/Task1/Countdown_Timer/Countdown_Timer.csproj" />
+  <Project Path="Task1_Absolute_Difference/Task1_Absolute_Difference.csproj" Id="633752ff-cfd8-47a8-b742-976b84b1c271" />
 </Solution>

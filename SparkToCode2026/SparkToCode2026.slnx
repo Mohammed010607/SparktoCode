@@ -20,4 +20,5 @@
   <Project Path="../C# Fundamentals Tasks/Part 2/Task 5/Number_Guessing_Game/Number_Guessing_Game.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 2/Task1/Countdown_Timer/Countdown_Timer.csproj" />
   <Project Path="Task1_Absolute_Difference/Task1_Absolute_Difference.csproj" Id="633752ff-cfd8-47a8-b742-976b84b1c271" />
+  <Project Path="../C# Fundamentals Tasks/Part 3/Task2_Power_&amp;_Root_Explorer/Task2_Power_&amp;_Root_Explorer.csproj" Id="0964bdb5-7a82-4f1d-9d3f-12051ddd5ef3" />
 </Solution>

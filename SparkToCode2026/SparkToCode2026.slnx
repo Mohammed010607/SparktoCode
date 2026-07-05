@@ -14,6 +14,7 @@
   <Project Path="../C# Fundamentals Tasks/Part 1/Task7_MovieTickets/Task7_MovieTickets/Task7_MovieTickets.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 1/Task8_RestaurantBillDiscount/Task8_RestaurantBillDiscount/Task8_RestaurantBillDiscount.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 1/Task9_DayNameFinder/Task9_DayNameFinder/Task9_DayNameFinder.csproj" />
+  <Project Path="../C# Fundamentals Tasks/Part 2/Safe_Division_Calculator/Safe_Division_Calculator.csproj" Id="08c36d91-4065-46f0-8dcc-202e52145688" />
   <Project Path="../C# Fundamentals Tasks/Part 2/Task 2/Sum_of_Numbers/Sum_of_Numbers.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 2/Task 3/MultiplicationTable/MultiplicationTable.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 2/Task 4/PasswordRetry/PasswordRetry.csproj" />

@@ -24,4 +24,5 @@
   <Project Path="../C# Fundamentals Tasks/Part 3/Task3_Name_Formatter/Task3_Name_Formatter.csproj" Id="92533ed8-390e-4c27-b7d8-57c929fe3ec6" />
   <Project Path="../C# Fundamentals Tasks/Part 3/Task4_Subscription_End_Date/Task4_Subscription_End_Date.csproj" Id="5670d37c-4031-40a5-bb40-ab0b6fe7a199" />
   <Project Path="../C# Fundamentals Tasks/Part 3/Task6_Password_Strength_Checker/Task6_Password_Strength_Checker.csproj" Id="3ede3097-94fd-4158-ae94-cffec03e9ba1" />
+  <Project Path="../C# Fundamentals Tasks/Part 3/Task7_Clean_Name_Comparator/Task7_Clean_Name_Comparator.csproj" Id="0d712bf5-2b46-4e79-8961-ea35f96e6f9c" />
 </Solution>

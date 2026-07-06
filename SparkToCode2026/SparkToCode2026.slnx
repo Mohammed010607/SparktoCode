@@ -20,7 +20,9 @@
   <Project Path="../C# Fundamentals Tasks/Part 2/Task 4/PasswordRetry/PasswordRetry.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 2/Task 5/Number_Guessing_Game/Number_Guessing_Game.csproj" />
   <Project Path="../C# Fundamentals Tasks/Part 2/Task1/Countdown_Timer/Countdown_Timer.csproj" />
-  <Project Path="Task1_Absolute_Difference/Task1_Absolute_Difference.csproj" Id="633752ff-cfd8-47a8-b742-976b84b1c271" />
+  <Project Path="../C# Fundamentals Tasks/Part 3/Task10_Word_Position_Finder/Task10_Word_Position_Finder.csproj" Id="45e11397-25c0-40ee-a302-a2d1e2f8fb59" />
+  <Project Path="../C# Fundamentals Tasks/Part 3/Task11_OTP_Generator/Task11_OTP_Generator.csproj" Id="e2a3b28f-c3bc-4200-993e-f7af5efb70a1" />
+  <Project Path="../C# Fundamentals Tasks/Part 3/Task12_Birthday_Insights/Task12_Birthday_Insights.csproj" Id="f6c2782a-74d2-4e6e-8d7d-c0bf3929f9e7" />
   <Project Path="../C# Fundamentals Tasks/Part 3/Task2_Power_&amp;_Root_Explorer/Task2_Power_&amp;_Root_Explorer.csproj" Id="0964bdb5-7a82-4f1d-9d3f-12051ddd5ef3" />
   <Project Path="../C# Fundamentals Tasks/Part 3/Task3_Name_Formatter/Task3_Name_Formatter.csproj" Id="92533ed8-390e-4c27-b7d8-57c929fe3ec6" />
   <Project Path="../C# Fundamentals Tasks/Part 3/Task4_Subscription_End_Date/Task4_Subscription_End_Date.csproj" Id="5670d37c-4031-40a5-bb40-ab0b6fe7a199" />
@@ -29,7 +31,16 @@
   <Project Path="../C# Fundamentals Tasks/Part 3/Task7_Clean_Name_Comparator/Task7_Clean_Name_Comparator.csproj" Id="0d712bf5-2b46-4e79-8961-ea35f96e6f9c" />
   <Project Path="../C# Fundamentals Tasks/Part 3/Task8_Membership_Expiry_Checker/Task8_Membership_Expiry_Checker.csproj" Id="ec2c2e74-5c8d-4d39-a829-7304e329404e" />
   <Project Path="../C# Fundamentals Tasks/Part 3/Task9_RoundUp_RoundDown_Explorer/Task9_RoundUp_RoundDown_Explorer.csproj" Id="4fa63175-e332-4898-9a54-dc234e1e20df" />
-  <Project Path="../C# Fundamentals Tasks/Part 3/Task10_Word_Position_Finder/Task10_Word_Position_Finder.csproj" Id="45e11397-25c0-40ee-a302-a2d1e2f8fb59" />
-  <Project Path="../C# Fundamentals Tasks/Part 3/Task11_OTP_Generator/Task11_OTP_Generator.csproj" Id="e2a3b28f-c3bc-4200-993e-f7af5efb70a1" />
-  <Project Path="../C# Fundamentals Tasks/Part 3/Task12_Birthday_Insights/Task12_Birthday_Insights.csproj" Id="f6c2782a-74d2-4e6e-8d7d-c0bf3929f9e7" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task10_Overloaded_Area_Calculator/Task10_Overloaded_Area_Calculator.csproj" Id="d280188d-8bf9-49bb-aafc-1843d6d7c3ef" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task11_Function_Based_Calculator/Task11_Function_Based_Calculator.csproj" Id="652c63ba-e2f3-458f-99b8-6c817bf661f8" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task12_Student_Report_Card_Generator/Task12_Student_Report_Card_Generator.csproj" Id="9b3d48e9-d9c1-44c6-b592-a9d2dee067a8" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task1_Personalized_Welcome_Function/Task1_Personalized_Welcome_Function.csproj" Id="09a93564-6223-4d52-958d-fc5d0ef9eb54" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task2_Square_Number_Function/Task2_Square_Number_Function.csproj" Id="32ea718e-8a87-4f0e-857d-a659628b2be8" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task3_Celsius_To_Farenheit_Function/Task3_Celsius_To_Farenheit_Function.csproj" Id="764d6da4-e7af-4595-9680-9cea1d543cb3" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task4_Fixed_Menu_Display_Function/Task4_Fixed_Menu_Display_Function.csproj" Id="3857c34f-dbd4-4424-8841-d2cfdf9de412" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task5_Even_Or_Odd_Function/Task5_Even_Or_Odd_Function.csproj" Id="01b6344a-fc9d-4d2f-949c-1ce0181fa3fd" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task6_Rectangle_Area_&amp;_Perimiter_Function/Task6_Rectangle_Area_&amp;_Perimiter_Function.csproj" Id="1c316cee-664d-4065-a33f-b926a9ea421a" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task7_Grade_Letter_Function/Task7_Grade_Letter_Function.csproj" Id="ecb6341f-ffd2-4256-b940-c71a53763a78" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task8_Countdown_Function/Task8_Countdown_Function.csproj" Id="41aa6cc4-6401-4e8b-87c4-042dbced4395" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task9_Overloaded_Multiply_Function/Task9_Overloaded_Multiply_Function.csproj" Id="cb8506a1-a0dc-457a-90e7-b16aff372c22" />
 </Solution>

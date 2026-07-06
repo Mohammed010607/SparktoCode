@@ -35,4 +35,5 @@
   <Project Path="../C# Fundamentals Tasks/Part 4/Task2_Square_Number_Function/Task2_Square_Number_Function.csproj" Id="32ea718e-8a87-4f0e-857d-a659628b2be8" />
   <Project Path="Task1_Absolute_Difference/Task1_Absolute_Difference.csproj" Id="633752ff-cfd8-47a8-b742-976b84b1c271" />
   <Project Path="Task3_Celsius_To_Farenheit_Function/Task3_Celsius_To_Farenheit_Function.csproj" Id="764d6da4-e7af-4595-9680-9cea1d543cb3" />
+  <Project Path="Task4_Fixed_Menu_Display_Function/Task4_Fixed_Menu_Display_Function.csproj" Id="3857c34f-dbd4-4424-8841-d2cfdf9de412" />
 </Solution>

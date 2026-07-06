@@ -38,4 +38,5 @@
   <Project Path="../C# Fundamentals Tasks/Part 4/Task5_Even_Or_Odd_Function/Task5_Even_Or_Odd_Function.csproj" Id="01b6344a-fc9d-4d2f-949c-1ce0181fa3fd" />
   <Project Path="../C# Fundamentals Tasks/Part 4/Task6_Rectangle_Area_&amp;_Perimiter_Function/Task6_Rectangle_Area_&amp;_Perimiter_Function.csproj" Id="1c316cee-664d-4065-a33f-b926a9ea421a" />
   <Project Path="../C# Fundamentals Tasks/Part 4/Task7_Grade_Letter_Function/Task7_Grade_Letter_Function.csproj" Id="ecb6341f-ffd2-4256-b940-c71a53763a78" />
+  <Project Path="../C# Fundamentals Tasks/Part 4/Task8_Countdown_Function/Task8_Countdown_Function.csproj" Id="41aa6cc4-6401-4e8b-87c4-042dbced4395" />
 </Solution>

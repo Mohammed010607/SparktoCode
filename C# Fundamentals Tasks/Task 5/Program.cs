@@ -2,7 +2,7 @@
 {
     internal class Program
     {
-        /*
+        
          // Functions For Task 9 (Grade Analyzer With Functions):
         static double CalculateAverage(List<int> results)
         {
@@ -20,7 +20,7 @@
             return results.Find(score => score < 60);
         }
         ///////////////////////////////////////////////////////////////////////////////////////////////////////////
-        */
+        
 
         // Function For Task 10 (Print Queue Manager):
         static Queue<string> RemoveJob(Queue<string> printQueue, string jobName)
@@ -36,9 +36,12 @@
             }
             return newQueue;
         }
+        //////////////////////////////////////////////////////////////////////////////////////////////////////////////
+        
+
         static void Main(string[] args)
         {
-            /*
+            
             //Task 1 (Fixed Grade Array):
 
             int[] grades = new int[5];
@@ -210,7 +213,7 @@
                 Console.WriteLine("The First Failing Grade is: "+firstFailing);
             }
             ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-            */
+            
 
             //Task 10 (Print Queue Manager):
 

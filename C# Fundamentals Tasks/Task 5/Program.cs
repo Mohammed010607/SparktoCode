@@ -85,7 +85,7 @@
             Console.WriteLine("Lowest Mark: " + gradeArray[0]);
             Console.WriteLine("Highest Mark: " + gradeArray[gradeArray.Length-1]);
             Console.WriteLine("Your Agerage Mark is: " + gradeArray.Average());
-            */
+           
             /////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
             
             //Task 6 (Filtering Shopping List)
@@ -110,6 +110,25 @@
             foreach (string entry in shoppingList) {
                 Console.WriteLine(entry);
             }
+            */
+            ////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
+
+            //Task 7 (High Score Podium): 
+
+            List<int> gameScores = new List<int>();
+            Console.WriteLine("Enter 5 Game Scores: ");
+            for(int i = 0; i < 5; i++)
+            {
+                Console.WriteLine("Enter Score Fore Game "+(i+1)+": ");
+                gameScores.Add(Convert.ToInt32(Console.ReadLine()));
+            }
+            gameScores.Sort();
+            gameScores.Reverse();
+            Console.WriteLine("");
+            Console.WriteLine("Podium: ");
+            Console.WriteLine("1st Place: " + gameScores[0]);
+            Console.WriteLine("2nd Place: " + gameScores[1]);
+            Console.WriteLine("3rd Place: " + gameScores[2]);
         }
     }
 }

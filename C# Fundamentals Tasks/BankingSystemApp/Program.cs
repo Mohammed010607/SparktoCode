@@ -99,15 +99,16 @@ namespace BankingSystemApp
             }
             while (depositAmount < 0)
             {
-                if (depositAmount < 0)
+                Console.WriteLine("Invalid Amount, Try Again:");
+                try
                 {
-                    Console.WriteLine("Invalid Amount, Try Again:");
                     depositAmount = double.Parse(Console.ReadLine());
-                    
                 }
-                else
+
+                catch (FormatException)
                 {
-                    depositAmount = double.Parse(Console.ReadLine());
+                    Console.WriteLine("Error, Invalid Number Entered.");
+                    depositAmount = -1;
                 }
             }
             customerNames.Add(name);
@@ -207,13 +208,9 @@ namespace BankingSystemApp
             else
             {
                 Console.WriteLine("\nAccount Details:");
-                for (int i = 0; i < customerNames.Count; i++)
-                {
-                    Console.WriteLine("Name: " + customerNames[i]);
-                    Console.WriteLine("Account Number: " + accountNumbers[i]);
-                    Console.WriteLine("Balance: " + balances[i]);
-                    Console.WriteLine();
-                }
+                    Console.WriteLine("Name: " + customerNames[index]);
+                    Console.WriteLine("Account Number: " + accountNumbers[index]);
+                    Console.WriteLine("Balance: " + balances[index]);
             }
         }
         static void TransferAmount()
@@ -241,7 +238,7 @@ namespace BankingSystemApp
                     Console.WriteLine("Error, Invalid Amount Entered. ");
                     return;
                 }
-                if (transferQuantity > balances[index1])
+                if (transferQuantity <= 0 || transferQuantity > balances[index1])
                 {
                     Console.WriteLine("Error, Insufficient Amount");
                 }

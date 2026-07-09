@@ -104,17 +104,11 @@ namespace BankingSystemApp
             accountNumbers.Add(accountNum);
             balances.Add(depositAmount);
             Console.WriteLine("\nAccount Details:");
-            foreach(string nameIdentifier in customerNames)
-            {
-                Console.WriteLine("Name: "+nameIdentifier);
-            }
-            foreach(string accountID in accountNumbers)
-            {
-                Console.WriteLine("Account Number: " + accountID);
-            }
-            foreach(double deposit in balances)
-            {
-                Console.WriteLine("Balance: " + deposit);
+            for (int i = 0; i < customerNames.Count; i++) {
+                Console.WriteLine("Name: "+customerNames[i]);
+                Console.WriteLine("Account Number: "+accountNumbers[i]);
+                Console.WriteLine("Balance: "+balances[i]);
+                Console.WriteLine();
             }
         }
         static void DepositMoney()
@@ -141,9 +135,7 @@ namespace BankingSystemApp
                 else
                 {
                     balances[index] += amount;
-                    foreach (double totalBalance in balances) { 
-                        Console.WriteLine("\nUpdated Balance: " + totalBalance);
-                    }
+                    Console.WriteLine("\nYour Updated Balance: " + amount);
                 }
                 
             }
@@ -151,6 +143,7 @@ namespace BankingSystemApp
         static void WithdrawMoney()
         {
             // TODO: implement this service (see Section 3 requirements)
+
         }
         static void ShowBalance()
         {

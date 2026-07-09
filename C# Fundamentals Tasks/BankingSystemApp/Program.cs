@@ -200,7 +200,24 @@ namespace BankingSystemApp
         {
             // TODO: implement this service (see Section 3 requirements)
             Console.WriteLine("Enter Your Account Number: ");
+            string existingAccount = Console.ReadLine().ToUpper();
+            int index = accountNumbers.IndexOf(existingAccount);
 
+            if(index == -1)
+            {
+                Console.WriteLine("Error, Account Does Not Exist.");
+            }
+            else
+            {
+                Console.WriteLine("\nAccount Details:");
+                for (int i = 0; i < customerNames.Count; i++)
+                {
+                    Console.WriteLine("Name: " + customerNames[i]);
+                    Console.WriteLine("Account Number: " + accountNumbers[i]);
+                    Console.WriteLine("Balance: " + balances[i]);
+                    Console.WriteLine();
+                }
+            }
         }
         static void TransferAmount()
         {

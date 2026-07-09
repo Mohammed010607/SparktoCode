@@ -80,7 +80,7 @@ namespace BankingSystemApp
             Console.WriteLine("\nPlease Enter Your Name: ");
             string name = Console.ReadLine();
             Console.WriteLine("Please Enter Your New Account Number: ");
-            string accountNum = Console.ReadLine();
+            string accountNum =Console.ReadLine().ToUpper();
             if(accountNumbers.Contains(accountNum))
             {
                 Console.WriteLine("Error.");
@@ -103,10 +103,10 @@ namespace BankingSystemApp
             customerNames.Add(name);
             accountNumbers.Add(accountNum);
             balances.Add(depositAmount);
-
+            Console.WriteLine("\nAccount Details:");
             foreach(string nameIdentifier in customerNames)
             {
-                Console.WriteLine("\nName: "+nameIdentifier);
+                Console.WriteLine("Name: "+nameIdentifier);
             }
             foreach(string accountID in accountNumbers)
             {
@@ -120,6 +120,33 @@ namespace BankingSystemApp
         static void DepositMoney()
         {
             // TODO: implement this service (see Section 3 requirements)
+            Console.WriteLine("\nEnter Your Account Number: ");
+            string existingAccount = Console.ReadLine().ToUpper();
+            int index = accountNumbers.IndexOf(existingAccount);
+           
+
+            if(index == -1)
+            {
+                Console.WriteLine("Error, Account Doesnt Exist.");
+                
+            }
+            else
+            {
+                Console.WriteLine("Please Enter The Deposit Amount: ");
+                double amount = double.Parse(Console.ReadLine());
+                if(amount <= 0)
+                {
+                    Console.WriteLine("Error, Ammount Cannot Be Zero or Below.");
+                }
+                else
+                {
+                    balances[index] += amount;
+                    foreach (double totalBalance in balances) { 
+                        Console.WriteLine("\nUpdated Balance: " + totalBalance);
+                    }
+                }
+                
+            }
         }
         static void WithdrawMoney()
         {

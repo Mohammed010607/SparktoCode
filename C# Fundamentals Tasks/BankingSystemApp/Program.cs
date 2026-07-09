@@ -59,7 +59,7 @@ namespace BankingSystemApp
                         break;
                     case 7:
                         // TODO: call your second custom service function here
-                        
+                        ListAcoounts();
                         break;
                     case 8:
                         exitApp = true;
@@ -82,8 +82,8 @@ namespace BankingSystemApp
             Console.WriteLine("\nPlease Enter Your Name: ");
             string name = Console.ReadLine();
             Console.WriteLine("Please Enter Your New Account Number: ");
-            string accountNum =Console.ReadLine().ToUpper();
-            if(accountNumbers.Contains(accountNum))
+            string accountNum = Console.ReadLine().ToUpper();
+            if (accountNumbers.Contains(accountNum))
             {
                 Console.WriteLine("Error, Account Number Already Exists.");
                 return;
@@ -127,12 +127,12 @@ namespace BankingSystemApp
             Console.WriteLine("\nEnter Your Account Number: ");
             string existingAccount = Console.ReadLine().ToUpper();
             int index = accountNumbers.IndexOf(existingAccount);
-           
 
-            if(index == -1)
+
+            if (index == -1)
             {
                 Console.WriteLine("Error, Account Does Not Exist.");
-                
+
             }
             else
             {
@@ -148,7 +148,7 @@ namespace BankingSystemApp
                     return;
                 }
 
-                if(amount <= 0)
+                if (amount <= 0)
                 {
                     Console.WriteLine("Error, Ammount Cannot Be Zero or Below.");
                 }
@@ -157,7 +157,7 @@ namespace BankingSystemApp
                     balances[index] += amount;
                     Console.WriteLine("\nYour Updated Balance: " + balances[index]);
                 }
-                
+
             }
         }
         static void WithdrawMoney()
@@ -166,7 +166,7 @@ namespace BankingSystemApp
             Console.WriteLine("\nEnter Your Account Number: ");
             string existingAccount = Console.ReadLine().ToUpper();
             int index = accountNumbers.IndexOf(existingAccount);
-            
+
             if (index == -1)
             {
                 Console.WriteLine("Error, Account Does Not Exist.");
@@ -203,16 +203,16 @@ namespace BankingSystemApp
             string existingAccount = Console.ReadLine().ToUpper();
             int index = accountNumbers.IndexOf(existingAccount);
 
-            if(index == -1)
+            if (index == -1)
             {
                 Console.WriteLine("Error, Account Does Not Exist.");
             }
             else
             {
                 Console.WriteLine("\nAccount Details:");
-                    Console.WriteLine("Name: " + customerNames[index]);
-                    Console.WriteLine("Account Number: " + accountNumbers[index]);
-                    Console.WriteLine("Balance: " + balances[index]);
+                Console.WriteLine("Name: " + customerNames[index]);
+                Console.WriteLine("Account Number: " + accountNumbers[index]);
+                Console.WriteLine("Balance: " + balances[index]);
             }
         }
         static void TransferAmount()
@@ -225,10 +225,12 @@ namespace BankingSystemApp
             int index1 = accountNumbers.IndexOf(senderAccount);
             int index2 = accountNumbers.IndexOf(recievrAccount);
 
-            if(index1 == -1 || index2 == -1){
+            if (index1 == -1 || index2 == -1)
+            {
                 Console.WriteLine("Error, Invalid Account Number.");
             }
-            else {
+            else
+            {
                 Console.WriteLine("Please Enter The Transfer Amount: ");
                 double transferQuantity;
                 try
@@ -263,7 +265,7 @@ namespace BankingSystemApp
             string existingAccount = Console.ReadLine().ToUpper();
             int index = accountNumbers.IndexOf(existingAccount);
 
-            if(index == -1)
+            if (index == -1)
             {
                 Console.WriteLine("Error, Account Does Not Exist");
                 return;
@@ -271,19 +273,19 @@ namespace BankingSystemApp
 
             double balance = balances[index];
             string tier;
-            if(balance > 30000)
+            if (balance >= 30000)
             {
                 tier = "Diamond";
             }
-            else if(balance >= 20000)
+            else if (balance >= 20000)
             {
                 tier = "Gold";
             }
-            else if(balance >= 15000)
+            else if (balance >= 15000)
             {
                 tier = "Silver";
             }
-            else if(balance >= 10000)
+            else if (balance >= 10000)
             {
                 tier = "Bronze";
             }
@@ -299,6 +301,22 @@ namespace BankingSystemApp
             Console.WriteLine("Tier: " + tier);
         }
 
-        static void 
+        static void ListAcoounts()
+        {
+            if (customerNames.Count == 0)
+            {
+                Console.WriteLine("\nNo Accounts Found.");
+                return;
+            }
+
+            Console.WriteLine("\n===== All Accounts =====");
+            for (int i = 0; i < customerNames.Count; i++)
+            {
+                Console.WriteLine("Name: " + customerNames[i]);
+                Console.WriteLine("Account Number: " + accountNumbers[i]);
+                Console.WriteLine("Balance: " + balances[i]);
+                Console.WriteLine();
+            }
+        }
     }
 }

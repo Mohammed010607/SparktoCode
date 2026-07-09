@@ -162,14 +162,16 @@ namespace BankingSystemApp
                 }
                 else
                 {
-                    double newTotal = balances[index] - withdrawl;
-                    Console.WriteLine("Updated Balance: " + newTotal);
+                    balances[index] -= withdrawl;
+                    Console.WriteLine("Updated Balance: " + balances[index]);
                 }
             }
         }
         static void ShowBalance()
         {
             // TODO: implement this service (see Section 3 requirements)
+            Console.WriteLine("Enter Your Account Number: ");
+
         }
         static void TransferAmount()
         {

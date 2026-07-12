@@ -228,7 +228,7 @@
             {
                 Console.WriteLine("Both Accounts Have Equal Balances.");
             }
-            */
+            
 
             //Case 8 (Restock Product & Stock Level Check):
             Console.WriteLine("Select The Product By Number: ");
@@ -267,6 +267,54 @@
             {
                 Console.WriteLine("Invalid, Product Doesn't Exist.");
             }
+            */
+
+            //----------------------------HARD (Case 9-13)-------------------------------------
+
+            //Case 9 (Transfer Between Accounts):
+            Console.WriteLine("Select a Source Account: ");
+            Console.WriteLine(account1.AccountNumber);
+            Console.WriteLine(account2.AccountNumber);
+            int sourceAccount = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("\nSelect a Destination Account: ");
+            Console.WriteLine(account1.AccountNumber);
+            Console.WriteLine(account2.AccountNumber);
+            int destinationAccount = int.Parse(Console.ReadLine());
+
+            Console.WriteLine("Enter an Amount to Transfer: ");
+            double transferAmount = double.Parse(Console.ReadLine());
+
+            BankAccount source;
+            if (sourceAccount == account1.AccountNumber)
+            {
+                source = account1;
+            }
+            else
+            {
+                source = account2;
+            }
+
+            BankAccount destination;
+            if (destinationAccount == account1.AccountNumber) { 
+                destination = account1;
+            }
+            else
+            {
+                destination = account2;
+            }
+
+            if(source.Balance >= transferAmount)
+            {
+                source.Withdraw(transferAmount);
+                destination.Deposit(transferAmount);
+                Console.WriteLine("Transfer Successful.");
+            }
+            else
+            {
+                Console.WriteLine("Insufficient Funds.");
+            }
+
         }
     }
 

@@ -189,7 +189,7 @@
             {
                 Console.WriteLine("Invalid, Product Doesn't Exist.");
             }
-            */
+            
 
             //-------------------------------MEDIUM (Case 6-8)----------------------------------------
             // Case 6 (Register Student):
@@ -215,6 +215,20 @@
             {
                 Console.WriteLine("Invalid, Student Doesn't Exist.");
             }
+            
+
+            //Case 7 (Compare Two Account Balances)
+            if (account1.Balance > account2.Balance) {
+                Console.WriteLine("Account 1 has a Greater Balance");
+            }
+            else if (account1.Balance < account2.Balance) {
+                Console.WriteLine("Account 2 has a Greater Balance");
+            }
+            else
+            {
+                Console.WriteLine("Both Accounts Have Equal Balances.");
+            }
+            */
         }
     }
 

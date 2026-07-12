@@ -518,10 +518,28 @@
             BankAccount newAccount = new BankAccount(newAccNum, newHolderName, newBalance);
             Console.WriteLine("Account Number: " + newAccount.AccountNumber);
             newAccount.CheckBalance();
-            */
 
             // Case 17 (Total Students Counter [Static Fields & Methods]):
             Console.WriteLine("Total Students Created: " + Student.GetStudentCount());
+            */
+
+            // Case 18 (Overdrawn Account Check [Read-Only Property]):
+
+            Console.WriteLine("Select an Account: ");
+            Console.WriteLine(account1.AccountNumber);
+            Console.WriteLine(account2.AccountNumber);
+            int overdrawnCheck = int.Parse(Console.ReadLine());
+
+            BankAccount checkedAccount;
+            if (overdrawnCheck == account1.AccountNumber)
+                checkedAccount = account1;
+            else
+                checkedAccount = account2;
+
+            if (checkedAccount.IsOverdrawn)
+                Console.WriteLine("The account is overdrawn.");
+            else
+                Console.WriteLine("The account is not overdrawn.");
         }
     }
 
@@ -574,6 +592,10 @@
         private void SendEmail()
         {
             Console.WriteLine("Email Notification Sent.");
+        }
+        public bool IsOverdrawn
+        {
+            get { return Balance < 0; }
         }
     }
 

@@ -434,7 +434,6 @@
                 chosenProduct.Sell(sellQuantity);
                 Console.WriteLine("Sale: " + chosenProduct.Price * sellQuantity+" OMR");
             }
-            */
 
             //---------------------------------ADVANCED (Case 14-15)-----------------------------------
             // Case 14 (Scholarship Eligibility Check)
@@ -480,7 +479,34 @@
             {
                 Console.WriteLine("Not Eligible, Balance is Below 100");
             }
+            */
 
+            //Case 15 (Full Balance Top-Up Flow):
+            Console.WriteLine("Select A B Account: ");
+            Console.WriteLine(account1.AccountNumber);
+            Console.WriteLine(account2.AccountNumber);
+            int pulledAccount = int.Parse(Console.ReadLine());
+
+            BankAccount accountPulled;
+            if (pulledAccount == account1.AccountNumber)
+                accountPulled = account1;
+            else
+                accountPulled = account2;
+
+            double topupNeeded;
+            if (accountPulled.Balance < 50)
+            {
+                double before = accountPulled.Balance;
+                topupNeeded = 100 - accountPulled.Balance;
+                accountPulled.Deposit(topupNeeded);
+                double after = accountPulled.Balance;
+                Console.WriteLine("Balance Before Top-Up: " + before+" OMR");
+                Console.WriteLine("Balance After Top-Up: "+after+" OMR");
+            }
+            else
+            {
+                Console.WriteLine("No Top-Up is Needed.");
+            }
         }
     }
 

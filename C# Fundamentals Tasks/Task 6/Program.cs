@@ -45,6 +45,45 @@
                 Price = 210.5,
                 StockQuantity = 78,
             };
+
+            // Case 1 (View Account Details)
+            int option;
+            do
+            {
+                Console.WriteLine("Select an Option: ");
+                Console.WriteLine("1. View Account Details.");
+                Console.WriteLine("2. Exit.");
+                option = int.Parse(Console.ReadLine());
+
+                switch (option)
+                {
+                    case 1:
+                        Console.WriteLine("\nChoose an Account (1 or 2)");
+                        int selectedOption = int.Parse(Console.ReadLine());
+                        if (selectedOption == 1)
+                        {
+                            account1.CheckBalance();
+                        }
+                        else if (selectedOption == 2)
+                        {
+                            account2.CheckBalance();
+                        }
+                        else
+                        {
+                            Console.WriteLine("Invalid Input.");
+                        }
+                        break;
+
+                    case 2:
+                        Console.WriteLine("Exiting..."); 
+                        break;
+
+                    default:
+                        Console.WriteLine("Invalid Input."); 
+                        break;
+                }
+            }
+            while (option != 2);
         }
     }
 

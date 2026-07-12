@@ -267,7 +267,6 @@
             {
                 Console.WriteLine("Invalid, Product Doesn't Exist.");
             }
-            */
 
             //----------------------------HARD (Case 9-13)-------------------------------------
 
@@ -313,6 +312,41 @@
             else
             {
                 Console.WriteLine("Insufficient Funds.");
+            }
+            */
+
+            //Case 10 (Update Student Grade (Validated)):
+            Console.WriteLine("Pick A Student");
+            Console.WriteLine("- "+student1.Name);
+            Console.WriteLine("- "+student2.Name);
+            string pickedStudent = Console.ReadLine();
+
+            Student selected;
+            if(pickedStudent == student1.Name)
+            {
+                selected = student1;
+            }
+            else
+            {
+                selected = student2;
+            }
+            try
+            {
+                Console.WriteLine("Enter a New Grade: ");
+                int newGrade = int.Parse(Console.ReadLine());
+
+                if (newGrade > 100 || newGrade < 0)
+                {
+                    Console.WriteLine("Error, Invalid Input.");
+                }
+                else
+                {
+                    selected.Grade = newGrade;
+                }
+            }
+            catch (FormatException)
+            {
+                Console.WriteLine("Error, Input Must Be An Integer.");
             }
 
         }

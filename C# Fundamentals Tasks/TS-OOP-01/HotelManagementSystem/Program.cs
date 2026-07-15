@@ -523,6 +523,19 @@ namespace HotelManagementSystem
 
                         break;
 
+                    case 14:
+                        List<Guest> ActiveBookings = guests.Where(g => g.roomNumber != "Not Assigned").ToList();
+                        if(ActiveBookings.Count() == 0)
+                        {
+                            Console.WriteLine("No Active Bookings Recorded.");
+                        }
+                        else
+                        {
+
+                        }
+                    
+                    break;
+
 
                 }
             }

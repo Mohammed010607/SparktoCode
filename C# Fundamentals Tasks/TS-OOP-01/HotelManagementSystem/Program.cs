@@ -140,6 +140,23 @@
                             Console.WriteLine($"Total Cost is: {totalPrice}");
                         }
                     break;
+
+                    case 4:
+                        if (rooms.Count() == 0)
+                        {
+                            Console.WriteLine("No Room has been Added yet.");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Total Rooms: {rooms.Count()}");
+                            List<Room> orderedRooms = rooms.OrderBy(r => r.roomNumber).ToList();
+                            foreach (var space in orderedRooms)
+                            {
+                                space.displayRoom();
+                            }
+
+                        }
+                        break;
                 }
             }
             while(option != 0);

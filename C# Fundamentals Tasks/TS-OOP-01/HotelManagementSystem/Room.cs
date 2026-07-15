@@ -23,7 +23,7 @@ namespace HotelManagementSystem
         {
             Console.WriteLine(roomNumber);
             Console.WriteLine(roomType);
-            Console.WriteLine(pricePerNight);
+            Console.WriteLine(pricePerNight.ToString("F2"));
             Console.WriteLine(isAvailable);
         }
     }

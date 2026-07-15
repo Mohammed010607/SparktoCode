@@ -174,6 +174,94 @@
                         }
 
                     break;
+
+                    case 6:
+                        Console.WriteLine("Select an Option: ");
+                        Console.WriteLine("1. Show All Available Rooms");
+                        Console.WriteLine("2. Filter By Room Type");
+                        Console.WriteLine("3. Filter By Max Price");
+                        Console.WriteLine("4. Room Price Statistics");
+                        Console.WriteLine("0. Back");
+
+                        int subOption = int.Parse(Console.ReadLine());
+                        switch (subOption)
+                        {
+                            case 1:
+                                List<Room> allRooms = rooms.Where(r => r.isAvailable == true).OrderBy(r => r.pricePerNight).ToList(); 
+                                if (allRooms.Count() == 0)
+                                {
+                                    Console.WriteLine("No Rooms Found For The Selected Criteria.");
+                                }
+                                else
+                                {
+                                    Console.WriteLine($"Available Rooms: {allRooms.Count()}");
+                                    foreach (var availableRooms in allRooms)
+                                    {
+                                        availableRooms.displayRoom();
+                                    }
+                                }
+                                
+                                break;
+
+                            case 2:
+                                Console.WriteLine("Enter a Room Type: ");
+                                string roomSelect = Console.ReadLine();
+                                List<Room> filteredRoom = rooms.Where(r => r.roomType == roomSelect).ToList();
+                                if (filteredRoom.Count() == 0)
+                                {
+                                    Console.WriteLine("No Rooms Found For The Selected Criteria.");
+                                }
+                                else
+                                {
+                                    foreach (var room in filteredRoom)
+                                    {
+                                        room.displayRoom();
+                                    }
+                                }
+                                break;
+
+                            case 3:
+                                Console.WriteLine("Enter a Maximum Price: ");
+                                double maxPrice = double.Parse(Console.ReadLine());
+                               
+                                List<Room> filter = rooms.Where(r => r.pricePerNight <= maxPrice).OrderBy(r => r.pricePerNight).ToList();
+                                if (filter.Count() == 0)
+                                {
+                                    Console.WriteLine("No Rooms Found For The Selected Criteria.");
+                                }
+                                else
+                                {
+
+                                    foreach (var room in filter)
+                                    {
+                                        room.displayRoom();
+                                    }
+                                }
+                            break;
+
+                            case 4:
+                                int totalRooms = rooms.Count();
+                                double avgPrice = rooms.Average(r => r.pricePerNight);
+                                double upperPrice = rooms.Max(r => r.pricePerNight);
+                                double minPrice = rooms.Min(r => r.pricePerNight);
+
+                                Console.WriteLine($"Total Rooms: {totalRooms}");
+                                Console.WriteLine($"Average Price: {avgPrice:F2}");
+                                Console.WriteLine($"Highest Price: {upperPrice:F2}");
+                                Console.WriteLine($"Lowest Price: {minPrice:F2}");
+                                break;
+
+                            case 0:
+
+                            break;
+
+                            default:
+                                Console.WriteLine("Invalid option.");
+                            break;
+                        }
+
+
+                    break;
                 }
             }
             while(option != 0);

@@ -108,6 +108,38 @@
                             Console.WriteLine($"Guest Details: \n- {newGuest.guestID}\n- {newGuest.guestName}\n- {newGuest.checkInDate}\n- {newGuest.totalNights}");
                         }
                     break;
+
+                    case 3:
+                        Console.WriteLine("Enter Your Guest ID: ");
+                        string id = Console.ReadLine();
+                        Console.WriteLine("Enter Your Desired Room: ");
+                        int roomID = int.Parse(Console.ReadLine());
+
+                        Guest foundGuest = guests.FirstOrDefault(g => g.guestID == id);
+                        Room foundRoom = rooms.FirstOrDefault(r => r.roomNumber == roomID);
+                        
+
+                        if(foundRoom == null)
+                        {
+                            Console.WriteLine("Error, Enter a Valid Room Number.");
+                        }
+                        else if (foundGuest == null)
+                        {
+                            Console.WriteLine("Error, Enter a Valid ID");
+                        }
+                        else if(foundRoom.isAvailable == false)
+                        {
+                            Console.WriteLine("Room is Currently Booked.");
+                        }
+                        else
+                        {
+                            foundGuest.roomNumber = roomID.ToString();
+                            foundRoom.isAvailable = false;
+                            double totalPrice = foundGuest.calculateTotalCost(foundRoom.pricePerNight);
+                            Console.WriteLine($"Booking Confirmed. {foundGuest.guestName} is in Room {foundRoom.roomNumber}");
+                            Console.WriteLine($"Total Cost is: {totalPrice}");
+                        }
+                    break;
                 }
             }
             while(option != 0);

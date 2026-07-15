@@ -258,6 +258,7 @@
                             default:
                                 Console.WriteLine("Invalid option.");
                             break;
+                        break;
                         }
 
                     case 7:
@@ -313,6 +314,32 @@
                             }
                         }
                         break;
+
+                    case 8:
+                        Console.WriteLine("Enter The Room Number: ");
+                        int roomIdentifier = int.Parse(Console.ReadLine());
+                        Room roomFinder = rooms.FirstOrDefault(r => r.roomNumber == roomIdentifier);
+
+                        if(roomFinder == null)
+                        {
+                            Console.WriteLine("Error, Room Doesn't Exist.");
+                        }
+                        else
+                        {
+                            double oldPrice = roomFinder.pricePerNight;
+                            Console.WriteLine("Enter the New Price / Night: ");
+                            double pPerNight = double.Parse(Console.ReadLine());
+                            if(pPerNight <= 0)
+                            {
+                                Console.WriteLine("Please Enter A Positive Number.");
+                            }
+                            else
+                            {
+                                roomFinder.pricePerNight = pPerNight;
+                                Console.WriteLine($"Price has been updated from {oldPrice} to {roomFinder.pricePerNight}");
+                            }
+                        }
+                    break;
 
 
                         

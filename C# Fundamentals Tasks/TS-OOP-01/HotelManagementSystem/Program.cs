@@ -449,9 +449,48 @@ namespace HotelManagementSystem
                         }
 
                         break;
-                    
-                        
-                        
+
+                    case 12:
+                        List<Room> removableRooms = rooms.Where(r => !r.isAvailable && !guests.Any(g => g.roomNumber == r.roomNumber.ToString())).OrderBy(r => r.roomNumber).ToList();
+                        if (removableRooms.Count() == 0)
+                        {
+                            Console.WriteLine("All unavailable rooms are currently occupied. No rooms can be decommissioned.");
+                        }
+                        else
+                        {
+                            Console.WriteLine($"Rooms eligible for removal: {removableRooms.Count()}");
+                            foreach (var room in removableRooms)
+                            {
+                                Console.WriteLine($"Room {room.roomNumber} - {room.roomType} - {room.pricePerNight:F2}");
+                            }
+
+                            Console.WriteLine("Confirm removal? (Y/N): ");
+                            string confirmRemoval = Console.ReadLine();
+
+                            if (confirmRemoval.ToUpper() == "Y")
+                            {
+                                
+                                int removedCount = rooms.RemoveAll(r => !r.isAvailable && !guests.Any(g => g.roomNumber == r.roomNumber.ToString()));
+
+                                Console.WriteLine($"Removed {removedCount} room(s). Remaining rooms: {rooms.Count()}");
+
+                                List<string> remaining = rooms.Select(r => $"Room {r.roomNumber} - {r.roomType}").ToList();
+                                Console.WriteLine("Remaining Rooms:");
+                                foreach (string line in remaining)
+                                {
+                                    Console.WriteLine(line);
+                                }
+                            }
+                            else
+                            {
+                                Console.WriteLine("Removal cancelled. No changes made.");
+                            }
+                        }
+                        break;
+
+
+
+
                 }
             }
             while(option != 0);

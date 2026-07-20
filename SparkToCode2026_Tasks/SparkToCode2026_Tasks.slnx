@@ -1,6 +1,7 @@
 <Solution>
   <Folder Name="/Solution Items/">
     <File Path="../DatabaseTasks/Airport_ERD.drawio.png" />
+    <File Path="../DatabaseTasks/College_ERD.drawio.png" />
   </Folder>
   <Project Path="../C# Fundamentals Tasks/Task 6/Task 6.csproj" />
 </Solution>

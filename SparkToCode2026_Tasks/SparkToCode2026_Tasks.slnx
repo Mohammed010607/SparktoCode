@@ -1,8 +1,11 @@
 <Solution>
   <Folder Name="/Solution Items/">
     <File Path="../DatabaseTasks/Airport_ERD.drawio.png" />
+    <File Path="../DatabaseTasks/Airport_Mapping.drawio.png" />
     <File Path="../DatabaseTasks/College_ERD.drawio.png" />
+    <File Path="../DatabaseTasks/College_MS_Mapping.drawio.png" />
     <File Path="../DatabaseTasks/Company_ERD.drawio.png" />
+    <File Path="../DatabaseTasks/Company_Mapping.drawio.png" />
   </Folder>
   <Project Path="../C# Fundamentals Tasks/Task 6/Task 6.csproj" />
   <Project Path="../C# Fundamentals Tasks/TS-OOP-01/HotelManagementSystem/HotelManagementSystem.csproj" Id="040377d7-5ae4-414d-af28-55bb6afcf549" />
